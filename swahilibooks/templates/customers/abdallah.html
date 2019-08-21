@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Latest compiled and minified CSS -->
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="abdallah.css">
+    <script src="abdallah.js"></script>
+  
+    <title>sales</title>
+</head>
+<body>
+ 
+    <div class ="containerbc">
+        <H2>Invoice</H2>
+            <form class='inputs'>
+
+                    <div class="upper1">
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Customer:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="name">
+                    </div>  <br> <br> <br>
+                    <div class="col-md-4">
+                      <label for="formGroupExampleInput2">Customer Email:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
+                    </div>
+                  </div>
+                    <div class="balance">
+                   <h2> Balance Due </h2>: <br> ksh 500;
+                    </div>
+                   
+                    
+                             <div class='upper2'>
+                                   <div class="col-md-4">
+                                   <label for="inputAddressMD">Address:</label>
+                                   <input type="text" class="form-control" id="inputAddressMD" placeholder="1234 Main St">
+                                   </div>
+                             </div>
+                        </form>   
+                        </div>
+
+               <!-- Editable table -->
+<div class="card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4"></h3>
+    <div class="card-body">
+      <div id="table" class="table-editable">
+        <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+              class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+          <thead>
+            <tr>
+              <th class="text-center">Product/Service</th>
+              <th class="text-center">Description</th>
+              <th class="text-center">Quantity</th>
+              <th class="text-center">Rate</th>
+              <th class="text-center">Amount</th>
+             
+              <th class="text-center">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="pt-3-half" contenteditable="true">BOOKs</td>
+              <td class="pt-3-half" contenteditable="true">A3</td>
+              <td class="pt-3-half" contenteditable="true">5</td>
+              <td class="pt-3-half" contenteditable="true">20</td>
+              <td class="pt-3-half" contenteditable="true">100</td>
+              
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+              </td>
+            </tr>
+            <!-- This is our clonable table line -->
+            <tr>
+              <td class="pt-3-half" contenteditable="true">pens</td>
+              <td class="pt-3-half" contenteditable="true">A5</td>
+              <td class="pt-3-half" contenteditable="true">3</td>
+              <td class="pt-3-half" contenteditable="true">100</td>
+              <td class="pt-3-half" contenteditable="true">300</td>
+             
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+              </td>
+            </tr>
+            <!-- This is our clonable   line -->
+            <tr>
+              <td class="pt-3-half" contenteditable="true">laptop</td>
+              <td class="pt-3-half" contenteditable="true">hp</td>
+              <td class="pt-3-half" contenteditable="true">6</td>
+              <td class="pt-3-half" contenteditable="true">5000</td>
+              <td class="pt-3-half" contenteditable="true">300000</td>
+              
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+              </td>
+            </tr>
+            <!-- This is our clonable table line -->
+            <tr class="hide">
+              <td class="pt-3-half" contenteditable="true">calculator</td>
+              <td class="pt-3-half" contenteditable="true">fx82</td>
+              <td class="pt-3-half" contenteditable="true">400</td>
+              <td class="pt-3-half" contenteditable="true">5</td>
+              <td class="pt-3-half" contenteditable="true">2000</td>
+              
+               
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <input type="button" value="add">
+  <h3>Total</h3>
+  <!-- Editable table -->
+
+  <div class='footer'>
+
+
+  </div>
+                 
+
+
+              
+  
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</body>
+</html>
